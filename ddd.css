@@ -63,3 +63,11 @@ div.co-ddd {
     color: white;
     text-decoration: none;
 }
+
+div.show {
+    display: block;
+}
+
+div.hide {
+    display: none;
+}
