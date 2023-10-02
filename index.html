@@ -44,15 +44,7 @@
         </div>
     </div>
 
-<div class="container body-wrap hide" id="announce">
-    <div class="row align-items-start">
-        <div class="col container text-center">
-            <h3>Tickets available on October 1, 2023</h3>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid text-center hide" id="tickets">
+<div class="container-fluid text-center" id="tickets">
     <noscript><a href="https://www.eventbrite.com/e/denver-dev-day-friday-october-27-2023-tickets-698558516327" rel="noopener noreferrer" target="_blank"></noscript>
         <button id="eventbrite-widget-modal-trigger-698558516327" type="button">Buy Tickets</button>
         <noscript></a>Buy Tickets on Eventbrite</noscript>
@@ -73,29 +65,6 @@
             });
         </script>
 </div>
-
-<script type="text/javascript">
-    addEventListener("load", (event) => {
-        var currentdate = new Date();
-        var itsTime = currentdate.getFullYear() == 2023 && currentdate.getMonth()+1 == 10 && currentdate.getDate() == 1 && currentdate.getHours() >= 8;
-
-        let announceElement = document.querySelector('#announce');
-        let ticketsElement = document.querySelector('#tickets');
-
-        if (itsTime)
-        {
-            announceElement.classList.add('hide');
-            announceElement.classList.remove('show');
-            ticketsElement.classList.add('show');
-            ticketsElement.classList.remove('hide');
-        }
-        else
-        {
-            announceElement.classList.add('show');
-            announceElement.classList.remove('hide');
-        }
-    });
-</script>
 
 <div id="menu" class="container-fluid mt-3 mb-3">
     <div class="row justify-content-md-center">
